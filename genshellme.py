@@ -49,7 +49,7 @@ fi
 
 if __name__ == '__main__':
     if args.ip == None:
-        ipcmd = "/blu3/hackz/getmyip.sh"
+        ipcmd = "/tools/shellme/getmyip.sh"
         sp = subprocess.Popen([ipcmd, args.device], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         sp_out,sp_err = sp.communicate()
         sp.wait()
